@@ -1,0 +1,20 @@
+
+{% extends 'base.html' %}
+
+
+
+{% block content %}
+<div class="row">
+  <div class="col-md-4">
+    {% if latest_jobs %}
+    <ul>
+        {% for job in latest_jobs %}
+        <h3><a href="/portfolio/{{job.url}}"</a></h3>
+        <p><em>{{job.description}}<em></p>
+        <br>
+    {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}

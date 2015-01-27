@@ -1,0 +1,16 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<h2> {{single_job.title}} </h2>
+
+<ul>
+  <p>{{single_job.description}}</p>
+  <p>
+    {% if single_job.image %}
+    <img src = "/media/{{single_job.image}}">
+    {% endif %}
+  </p>
+
+</ul>
+{% endblock %}
