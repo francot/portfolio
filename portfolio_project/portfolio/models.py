@@ -19,7 +19,6 @@ class Job(models.Model):
     job_date = models.DateTimeField(null=True, blank=True)
     tag = models.CharField(max_length=20, blank=True, null=True)
     image = models.ImageField(upload_to="images", blank=True, null=True)
-    views = models.IntegerField(default=0)
     priority = models.PositiveIntegerField(null=True, blank=True)
 
 
